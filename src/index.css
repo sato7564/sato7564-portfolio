@@ -23,12 +23,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  color: #fff;
-  background-color: #000;
+  color: #333;
+  background-color: #ffffff;
 }
 
 #root {
   min-height: 100vh;
+  background-color: #ffffff;
 }
 
 html {

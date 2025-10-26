@@ -1,6 +1,6 @@
 .about {
   padding: 5rem 0;
-  background-color: #0a0a0a;
+  background-color: #F5F5F5;
 }
 
 .about-content {
@@ -9,7 +9,7 @@
 }
 
 .about-text {
-  color: white;
+  color: #333;
 }
 
 .about-subtitle {
@@ -17,7 +17,7 @@
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   font-family: 'Poppins', sans-serif;
-  color: #00e5ff;
+  color: #2196F3;
 }
 
 .about-subtitle:first-child {
@@ -28,7 +28,7 @@
   font-size: 1.1rem;
   line-height: 1.9;
   margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
   font-family: 'Inter', sans-serif;
 }
 
@@ -42,33 +42,32 @@
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: rgba(0, 229, 255, 0.05);
-  border: 1px solid rgba(0, 229, 255, 0.2);
+  background: #fff;
+  border: 1px solid rgba(33, 150, 243, 0.15);
   border-radius: 10px;
   transition: all 0.3s;
 }
 
 .activity-item:hover {
   transform: translateX(10px);
-  border-color: rgba(0, 229, 255, 0.5);
-  box-shadow: 0 5px 20px rgba(0, 229, 255, 0.2);
+  border-color: rgba(33, 150, 243, 0.3);
+  box-shadow: 0 5px 20px rgba(33, 150, 243, 0.15);
 }
 
 .activity-icon {
   font-size: 2.5rem;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
 }
 
 .activity-info h4 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-family: 'Poppins', sans-serif;
-  color: #ffd700;
+  color: #2196F3;
 }
 
 .activity-info p {
-  color: rgba(255, 255, 255, 0.75);
+  color: #666;
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
 }

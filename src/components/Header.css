@@ -3,12 +3,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 229, 255, 0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  border-bottom: 1px solid rgba(33, 150, 243, 0.1);
 }
 
 .header .container {
@@ -23,13 +23,10 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(135deg, #00e5ff 0%, #ffd700 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-family: 'Poppins', sans-serif;
+  color: #2196F3;
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .nav {
@@ -38,7 +35,7 @@
 }
 
 .nav a {
-  color: #fff;
+  color: #555;
   text-decoration: none;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
@@ -54,12 +51,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #00e5ff, #ffd700);
+  background: #2196F3;
   transition: width 0.3s;
 }
 
 .nav a:hover {
-  color: #00e5ff;
+  color: #2196F3;
 }
 
 .nav a:hover::after {
