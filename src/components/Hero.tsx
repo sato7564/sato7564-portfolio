@@ -3,22 +3,31 @@ import './Hero.css';
 
 const Hero: React.FC = () => {
   return (
-    <section id="about" className="hero">
+    <section id="home" className="hero">
       <div className="container">
         <div className="hero-content">
+          <div className="hero-badge">AI × Human Creator</div>
           <h1 className="hero-title">
-            Hi, I'm <span className="highlight">sato7564</span>
+            AIを<span className="highlight">1000%</span>使い切る
+            <br />
+            クリエイター
           </h1>
           <p className="hero-subtitle">
-            Full Stack Developer & Creative Problem Solver
+            テクノロジーと創造性の融合で、未来を形にする
           </p>
           <p className="hero-description">
-            I build modern web applications with passion for clean code and great user experiences.
+            Unity、Python、Web技術を駆使し、AIの力を最大限に活用したプロダクト開発を実践。
+            技術×創作×占いの領域で、新しい体験を生み出します。
           </p>
           <div className="hero-buttons">
-            <a href="#projects" className="btn btn-primary">View My Work</a>
-            <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="#works" className="btn btn-primary">作品を見る</a>
+            <a href="#fortune" className="btn btn-secondary">占いを試す</a>
           </div>
+        </div>
+        <div className="hero-visual">
+          <div className="visual-circle circle-1"></div>
+          <div className="visual-circle circle-2"></div>
+          <div className="visual-circle circle-3"></div>
         </div>
       </div>
     </section>

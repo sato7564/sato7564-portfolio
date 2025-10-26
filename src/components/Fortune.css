@@ -1,0 +1,215 @@
+.fortune {
+  padding: 5rem 0;
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.fortune-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fortune-intro, .fortune-drawing, .fortune-result {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.tarot-deck {
+  display: flex;
+  justify-content: center;
+  gap: -30px;
+  margin-bottom: 2rem;
+  perspective: 1000px;
+}
+
+.card-back {
+  width: 120px;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.2) 0%, rgba(255, 215, 0, 0.2) 100%);
+  border: 2px solid rgba(0, 229, 255, 0.5);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  transform: rotateY(0deg);
+  transition: transform 0.3s;
+  margin: 0 -15px;
+}
+
+.card-back:nth-child(1) {
+  transform: rotate(-10deg);
+}
+
+.card-back:nth-child(2) {
+  transform: rotate(0deg) scale(1.1);
+  z-index: 2;
+}
+
+.card-back:nth-child(3) {
+  transform: rotate(10deg);
+}
+
+.card-back:hover {
+  transform: rotate(0deg) scale(1.15) translateY(-10px);
+  z-index: 3;
+}
+
+.fortune-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-family: 'Inter', sans-serif;
+}
+
+.draw-button {
+  padding: 1rem 3rem;
+  background: linear-gradient(135deg, #00e5ff 0%, #ffd700 100%);
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+.draw-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
+}
+
+.fortune-drawing {
+  padding: 4rem 0;
+}
+
+.card-spinning {
+  font-size: 6rem;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 2rem;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.drawing-text {
+  color: #00e5ff;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fortune-result {
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.drawn-card {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+  border: 2px solid rgba(0, 229, 255, 0.5);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.drawn-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00e5ff, #ffd700);
+}
+
+.card-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #00e5ff 0%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.card-symbol {
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+.card-meaning {
+  margin-bottom: 2rem;
+}
+
+.meaning-text {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.keywords {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.keyword-tag {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  color: #00e5ff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-back {
+    width: 90px;
+    height: 135px;
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+  }
+
+  .meaning-text {
+    font-size: 1.1rem;
+  }
+}
